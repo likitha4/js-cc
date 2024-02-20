@@ -21,7 +21,7 @@ console.log(typeof undefined) //undefined
 
 //types--> number--2 to power 53,
 //  bigint, string, boolean,
-//  null-- standalone
+//  null-- standalone value
 // undefined
 // symbol
 // object
