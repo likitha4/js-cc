@@ -29,3 +29,42 @@ console.log(sp, " now in string", stringnum, " " ,typeof stringnum);
 
 let object=Object(sp);
 console.log("object val", object,"type is ", typeof object);
+
+
+// operations
+let val=8
+let negvalue=-val;
+console.log(negvalue)
+
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2**5);
+console.log(2/9);
+console.log(2%3);
+
+
+let str1="hello"
+
+let str2="welcome"
+
+console.log(str1 + str2)
+console.log("21" + 45)
+
+console.log("1" + 2 + 2);
+console.log(1+ 3 + "5")
+
+console.log((3 + 4) * (5 % 2));
+console.log(+true)//1
+console.log(+"")//0
+
+
+
+let n1,n2,n3;
+
+n1=n2=n3=67+2
+   
+console.log(n1,n2,n3)
+let gamecounter=78
+gamecounter++;
+console.log(gamecounter);
