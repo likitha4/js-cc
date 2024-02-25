@@ -43,3 +43,20 @@ console.log(typeof myfunc)
 console.log(typeof obj)
 console.log(typeof heros)
 console.log(typeof id)
+// stack-primitive, heap-non primitive
+
+let nan3="hello";
+let nan4=nan3;
+nan4="mummy";
+console.log(nan3,nan4," nan3 and nan4");
+
+let obje={
+    "name":"wone",
+    "surname":"emi"
+}
+console.log(obje," object1");
+let obje3=obje;
+console.log(obje3, "object2");
+obje3.name="wominxing"
+console.log(obje3,"second object");
+console.log(obje,"first object");
