@@ -1,4 +1,4 @@
-///prmitivr
+///primitive
 // 7 types==string, number, boolean, null, undefined, symbol, bigint(scientific or large vals)
 
 const score=10
