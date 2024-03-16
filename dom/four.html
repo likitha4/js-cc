@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code</title>
+</head>
+<body style="background-color: cadetblue; color: whitesmoke;">
+    <ul class="lang">
+        <li>java</li>
+    </ul>
+</body>
+<script>
+    function addlang(langName){
+        let element=document.createElement('li');
+        element.innerHTML=`${langName}`;
+       let selectedclass=document.querySelector('.lang');
+       selectedclass. appendChild(element)
+    }
+    addlang("python");
+    addlang("c#");
+
+    // optimized way to add elements to dom
+    function addoptimLang(langName){
+ let element= document.createElement('li');
+element.appendChild(document.createTextNode(langName));
+
+document.querySelector('.lang').appendChild(element);
+}
+addoptimLang("golang");
+
+// edit elements
+    const secondlang=document.querySelector('li:nth-child(2)')
+     console.log(secondlang);
+    secondlang.textContent="django"
+    console.log(secondlang);
+// optimized
+let element=document.createElement('li')
+element.textContent="mojo"
+secondlang.replaceWith(element)
+
+// edit example
+let firstlang=document.querySelector('li:first-child')
+console.log(firstlang);
+// firstlang.textContent="c"
+firstlang.outerHTML='<li>c</li>';
+
+
+// remove
+const lastlang=document.querySelector('li:last-child')
+lastlang.remove()
+
+
+</script>
+</html>

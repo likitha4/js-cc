@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom continue</title>
+</head>
+
+<body style="background-color: blue;color:red">
+
+</body>
+<script>
+    let element=document.createElement('div')
+    // element.innerHTML="welcome to the world";
+    element.setAttribute('class','paragraph')
+    element.id="first"
+    element.setAttribute('color',"pink")
+    element.style.padding="30px";
+    let text=document.createTextNode("welcome to the world")
+    element.appendChild(text)
+    console.log(element);
+    document.body.appendChild(element)
+    
+</script>
+</html>
